@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>JS Test</title>
+  </head>
+  <body>
+    <h1 class="page-title">TEST YOUR JAVASCRIPT KNOWLEDGE</h1>
+    <div class="filter-wrapper">
+      <div class="filter">CLOSURE</div>
+      <div class="filter">ARRAYS</div>
+    </div>
+    <div class="cards-wrapper">
+
+      <div class="card">
+        <div class="card-content-wrapper">
+          <div class="card-header">
+            <h2 class="card-title">ARRAYS</h2>
+            <button class="card-submit">Submit</button>
+          </div>
+          <p class="card-question">
+            What does forEach array method do? Give an example.
+          </p>
+          <textarea class="card-input" placeholder="Type answer here"></textarea>
+          <div class="card-actual-answer">
+            ForEach will iterate through every element of an array and perform a given function on the element. It does not return anything! E.g. arr.forEach(x => x + 1).
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content-wrapper">
+          <div class="card-header">
+            <h2 class="card-title">ARRAYS</h2>
+            <button class="card-submit">Submit</button>
+          </div>
+          <p class="card-question">
+            What does map array method do? Give an example.
+          </p>
+          <textarea class="card-input" placeholder="Type answer here"></textarea>
+          <div class="card-actual-answer">
+            Map iterates through an array and performs a function on every element, but then returns the result in a new array. E.g. numbers = arr.map(x => x + 2).
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content-wrapper">
+          <div class="card-header">
+            <h2 class="card-title">ARRAYS</h2>
+            <button class="card-submit">Submit</button>
+          </div>
+          <p class="card-question">
+            What does filter array method do? Give an example.
+          </p>
+          <textarea class="card-input" placeholder="Type answer here"></textarea>
+          <div class="card-actual-answer">
+            Filter iterates through the array and tests if an element matches a given criteria. It will return all elements that matched true in a new array. E.g. over100 = arr.filter(x => x > 100)
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content-wrapper">
+          <div class="card-header">
+            <h2 class="card-title">ARRAYS</h2>
+            <button class="card-submit">Submit</button>
+          </div>
+          <p class="card-question">
+            What does reduce array method do? Give an example.
+          </p>
+          <textarea class="card-input" placeholder="Type answer here"></textarea>
+          <div class="card-actual-answer">
+            Reduce takes a callback function with an accumulator and an initial value. For the first element, the accumulator is set to the initial value and then the result of the function is passed as a parameter for callback function on the next element. It returns one value. E.g. sum = numbers.reduce((acc, number) => acc + number, 0).
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content-wrapper">
+          <div class="card-header">
+            <h2 class="card-title">ARRAYS</h2>
+            <button class="card-submit">Submit</button>
+          </div>
+          <p class="card-question">
+            What does sort array method do? Give an example.
+          </p>
+          <textarea class="card-input" placeholder="Type answer here"></textarea>
+          <div class="card-actual-answer">
+            Sort will order an array based on a given condition. It does this by comparing two elements at a time and returning either 1  or -1. This bubbles the elements up and down the array. E.g. sorted = numbers.sort((a,b) => a > b ? 1 : -1).
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content-wrapper">
+          <div class="card-header">
+            <h2 class="card-title">CLOSURE</h2>
+            <button class="card-submit">Submit</button>
+          </div>
+          <p class="card-question">
+            What is closure?
+          </p>
+          <textarea class="card-input" placeholder="Type answer here"></textarea>
+          <div class="card-actual-answer">
+            Closure is a nested inner functions ability to access an outer functions scope, even if the outer function has been returned.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content-wrapper">
+          <div class="card-header">
+            <h2 class="card-title">CLOSURE</h2>
+            <button class="card-submit">Submit</button>
+          </div>
+          <p class="card-question">
+            How does closure work?
+          </p>
+          <textarea class="card-input" placeholder="Type answer here"></textarea>
+          <div class="card-actual-answer">
+            At the point of creation, an inner function stores the local memory of it's outer function in a hidden property called [[scopes]]. This data is stored in a 'backpack' on the function for the rest of its life, and is only accessible through that function.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content-wrapper">
+          <div class="card-header">
+            <h2 class="card-title">CLOSURE</h2>
+            <button class="card-submit">Submit</button>
+          </div>
+          <p class="card-question">
+            What is the execution context?
+          </p>
+          <textarea class="card-input" placeholder="Type answer here"></textarea>
+          <div class="card-actual-answer">
+            Execution context is the environment in which code is executed. Code can be executed in the global execution context or a functions execution context. Every execution context has a memory and a thread of execution, where the code is executed.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content-wrapper">
+          <div class="card-header">
+            <h2 class="card-title">CLOSURE</h2>
+            <button class="card-submit">Submit</button>
+          </div>
+          <p class="card-question">
+            What is scope and what is lexical scoping?
+          </p>
+          <textarea class="card-input" placeholder="Type answer here"></textarea>
+          <div class="card-actual-answer">
+            Scope is just a fancy word for what data is available to us at any given point in time. Lexical scoping is a convention that sets the scope of a function to the block of code it is defined in. Moreover, where a function is called does not determine its scope.
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
